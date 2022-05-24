@@ -3,5 +3,6 @@ class Audition < ActiveRecord::Base
 
     def call_back
         self.update( hired: true )
+        return self
     end
 end
